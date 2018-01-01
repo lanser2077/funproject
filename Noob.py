@@ -67,6 +67,8 @@ def sniffimage():
 	c2="driftnet -i "+i
 	t1=threading.Thread(target=exe,args=(c1,))
 	t2=threading.Thread(target=exe,args=(c2,))
+        t1.start()
+        t2.start()
 def mod():
 	print menu
 	choose=raw_input(colors.redw+"EnterChoose>"+colors.off)
